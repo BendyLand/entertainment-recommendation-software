@@ -1,0 +1,65 @@
+{
+    "title": "Kanban",
+    "cols": [
+        {
+            "title": "Bugs",
+            "tasks": [],
+            "id": "clr2ssoln000a46665h4o6g6a",
+            "color": "#eb144c"
+        },
+        {
+            "title": "To-Do",
+            "tasks": [
+                {
+                    "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
+                    "id": "clr2ubbp3000a46669e7nr28q"
+                },
+                {
+                    "text": "# Project Brainstorming\n## Now that you have an idea, visualize the end result:\n\n - What does your program do?\n - What data do you need?\n - What questions will you ask the user?\n\nHow do the above questions return a recommendation?  \nMake sure that it satisfies all of the project objectives.\n\n*Make a timeline for yourself and avoid the temptation to build things that aren’t required. Setting firm boundaries and deadlines will keep you on track and prevent scope creep.*\n\\\n### The following tasks will help you identify natural breakpoints.",
+                    "id": "clr2ubvvg000b4666wg7bxflz"
+                },
+                {
+                    "text": "# Setting up your GitHub Repository\n## Create a new GitHub repository for this project and add at least one Python file inside.\n\n - Don’t forget to name your file!",
+                    "id": "clr2udtdu000c4666lyx2kd4v"
+                },
+                {
+                    "text": "# Version Control\n - Set up Git tracking in your directory and make sure to add and commit changes as you make them.",
+                    "id": "clr2ueih2000d4666bc7llpnd"
+                },
+                {
+                    "text": "# Gather Data\n## We need to create some data that we can place into a data structure.\n\n### There are two options available to you:\n\n - Download and use a premade dataset here that contains data for fictional restaurants.\n - Create your own sets of data.",
+                    "id": "clr2uf2ah000e4666hchm4kad"
+                },
+                {
+                    "text": "# Write Your Program\n## This project consists of two main parts:\n\n1) Implementing an autocomplete that, based on a user’s input, returns a list of possible categories based on the beginning of a word. You should use the data created in the last step to create the autocomplete. It is up to you how to properly store and retrieve the data.\n2) Retrieving and displaying all of the data related to the category selected by the user. It is up to you how to properly store and retrieve the data.",
+                    "id": "clr2ug2q2000f4666qcq2te1f"
+                },
+                {
+                    "text": "# Refactoring\n## Now that you have a working program, try to go back to it see what you can do better.\n\n - Is there a better data structure to use to store your data?\n - Would a different searching algorithm improve efficiency?\n - Is there documentation in your program to make your code readable?",
+                    "id": "clr2ugpgm000g4666jhjv0rpw"
+                },
+                {
+                    "text": "# Blog Post\n - Once you’ve completed the program, you’re ready to create a blog post about your programming.",
+                    "id": "clr2uh7i5000h46667pqdk1lv"
+                }
+            ],
+            "id": "clr2ssoln000c4666dntydlyn",
+            "color": "#fcb900"
+        },
+        {
+            "title": "Doing",
+            "tasks": [],
+            "id": "clr2ssoln000d4666j8gxeru9",
+            "color": "#0693e3"
+        },
+        {
+            "title": "Done",
+            "tasks": [],
+            "id": "clr2ssoln000e4666moihcrew",
+            "color": "#00d084"
+        }
+    ],
+    "autosave": true,
+    "saveToFile": true,
+    "timestamp": 1704592857978
+}
