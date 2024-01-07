@@ -11,10 +11,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
-                    "id": "clr2ubbp3000a46669e7nr28q"
-                },
-                {
                     "text": "# Project Brainstorming\n## Now that you have an idea, visualize the end result:\n\n - What does your program do?\n - What data do you need?\n - What questions will you ask the user?\n\nHow do the above questions return a recommendation?  \nMake sure that it satisfies all of the project objectives.\n\n*Make a timeline for yourself and avoid the temptation to build things that aren’t required. Setting firm boundaries and deadlines will keep you on track and prevent scope creep.*\n\\\n### The following tasks will help you identify natural breakpoints.",
                     "id": "clr2ubvvg000b4666wg7bxflz"
                 },
@@ -54,12 +50,17 @@
         },
         {
             "title": "Done",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
+                    "id": "clr2ubbp3000a46669e7nr28q"
+                }
+            ],
             "id": "clr2ssoln000e4666moihcrew",
             "color": "#00d084"
         }
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1704592857978
+    "timestamp": 1704643581927
 }
