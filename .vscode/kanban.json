@@ -11,14 +11,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "# Setting up your GitHub Repository\n## Create a new GitHub repository for this project and add at least one Python file inside.\n\n - Don’t forget to name your file!",
-                    "id": "clr2udtdu000c4666lyx2kd4v"
-                },
-                {
-                    "text": "# Version Control\n - Set up Git tracking in your directory and make sure to add and commit changes as you make them.",
-                    "id": "clr2ueih2000d4666bc7llpnd"
-                },
-                {
                     "text": "# Gather Data\n## We need to create some data that we can place into a data structure.\n\n### There are two options available to you:\n\n - Download and use a premade dataset here that contains data for fictional restaurants.\n - Create your own sets of data.",
                     "id": "clr2uf2ah000e4666hchm4kad"
                 },
@@ -55,6 +47,14 @@
                 {
                     "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
                     "id": "clr2ubbp3000a46669e7nr28q"
+                },
+                {
+                    "text": "# Setting up your GitHub Repository\n## Create a new GitHub repository for this project and add at least one Python file inside.\n\n - Don’t forget to name your file!",
+                    "id": "clr2udtdu000c4666lyx2kd4v"
+                },
+                {
+                    "text": "# Version Control\n - Set up Git tracking in your directory and make sure to add and commit changes as you make them.",
+                    "id": "clr2ueih2000d4666bc7llpnd"
                 }
             ],
             "id": "clr2ssoln000e4666moihcrew",
@@ -63,5 +63,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1704761107775
+    "timestamp": 1704761625922
 }
