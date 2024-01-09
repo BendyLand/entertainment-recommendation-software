@@ -11,10 +11,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "# Project Brainstorming\n## Now that you have an idea, visualize the end result:\n\n - What does your program do?\n - What data do you need?\n - What questions will you ask the user?\n\nHow do the above questions return a recommendation?  \nMake sure that it satisfies all of the project objectives.\n\n*Make a timeline for yourself and avoid the temptation to build things that aren’t required. Setting firm boundaries and deadlines will keep you on track and prevent scope creep.*\n\\\n### The following tasks will help you identify natural breakpoints.",
-                    "id": "clr2ubvvg000b4666wg7bxflz"
-                },
-                {
                     "text": "# Setting up your GitHub Repository\n## Create a new GitHub repository for this project and add at least one Python file inside.\n\n - Don’t forget to name your file!",
                     "id": "clr2udtdu000c4666lyx2kd4v"
                 },
@@ -44,7 +40,12 @@
         },
         {
             "title": "Doing",
-            "tasks": [],
+            "tasks": [
+                {
+                    "text": "# Project Brainstorming\n## Now that you have an idea, visualize the end result:\n\n - What does your program do?\n - What data do you need?\n - What questions will you ask the user?\n\nHow do the above questions return a recommendation?  \nMake sure that it satisfies all of the project objectives.\n\n*Make a timeline for yourself and avoid the temptation to build things that aren’t required. Setting firm boundaries and deadlines will keep you on track and prevent scope creep.*\n\\\n### The following tasks will help you identify natural breakpoints.",
+                    "id": "clr2ubvvg000b4666wg7bxflz"
+                }
+            ],
             "id": "clr2ssoln000d4666j8gxeru9",
             "color": "#0693e3"
         },
@@ -62,5 +63,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1704643581927
+    "timestamp": 1704761107775
 }
