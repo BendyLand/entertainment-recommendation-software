@@ -224,36 +224,117 @@ movies = {
     }
 }
 
-# tv_shows = {
-#     "Saved by the Bell": {
-#         "year": 1989,
-#         "genre": ["sitcom", "kid-friendly"],
-#         "length": 86 # episodes
-#     },
-#     "Cops": {
-#         "year": 1989,
-#         "genre": ["action", "crime"],
-#         "length": 1100
-#     },
-#     "Full House": {
-#         "year": 1987,
-#         "genre": ["sitcom", "kid-friendly"],
-#         "length": 192
-#     },
-#     "The Simpsons": {
-#         "year": 1989,
-#         "genre": ["animated", "sitcom"],
-#         "length": 760
-#     },
-#     "Seinfeld": {
-#         "year": 1989,
-#         "genre": ["sitcom"],
-#         "length": 180
-#     },
-#     "Star Trek: Voyager": {
-#         "year": 1995,
-#         "genre": []
-#     }
-# }
+tv_shows = {
+    "Saved by the Bell": {
+        "year": 1989,
+        "genre": ["sitcom", "kid-friendly"],
+        "length": 86 # episodes
+    },
+    "Cops": {
+        "year": 1989,
+        "genre": ["action", "crime"],
+        "length": 1100
+    },
+    "Full House": {
+        "year": 1987,
+        "genre": ["sitcom", "kid-friendly"],
+        "length": 192
+    },
+    "The Simpsons": {
+        "year": 1989,
+        "genre": ["animated", "sitcom"],
+        "length": 760
+    },
+    "Seinfeld": {
+        "year": 1989,
+        "genre": ["sitcom"],
+        "length": 180
+    },
+    "Star Trek: Voyager": {
+        "year": 1995,
+        "genre": ["sci-fi"],
+        "length": 172
+    },
+    "Buffy the Vampire Slayer": {
+        "year": 1997,
+        "genre": ["drama", "supernatural"],
+        "length": 144
+    },
+    "South Park": {
+        "year": 1997,
+        "genre": ["animated", "sitcom"],
+        "length": 327
+    },
+    "Family Guy": {
+        "year": 1999,
+        "genre": ["animated", "sitcom"],
+        "length": 418
+    },
+    "The Sopranos": {
+        "year": 1999,
+        "genre": ["drama", "thriller"],
+        "length": 86
+    },
+    "Animaniacs": {
+        "year": 1993,
+        "genre": ["animated", "comedy", "kid-friendly"],
+        "length": 99
+    },
+    "Lost": {
+        "year": 2004,
+        "genre": ["drama", "sci-fi", "action-adventure"],
+        "length": 121
+    },
+    "Doctor Who": {
+        "year": 2005,
+        "genre": ["sci-fi", "action-adventure", "drama"],
+        "length": 875
+    },
+    "Gossip Girl": {
+        "year": 2007,
+        "genre": ["drama"],
+        "length": 121
+    },
+    "Dexter": {
+        "year": 2006,
+        "genre": ["drama", "thriller"],
+        "length": 96
+    },
+    "The Office": {
+        "year": 2005,
+        "genre": ["sitcom"],
+        "length": 201
+    },
+    "How I Met Your Mother": {
+        "year": 2005,
+        "genre": ["sitcom"],
+        "length": 208
+    },
+    "The Big Band Theory": {
+        "year": 2007,
+        "genre": ["sitcom"],
+        "length": 279
+    },
+    "House": {
+        "year": 2004,
+        "genre": ["medical", "drama"],
+        "length": 177
+    },
+    "Sherlock": {
+        "year": 2010,
+        "genre": ["drama"],
+        "length": 13
+    },
+    "Brooklyn Nine-Nine": {
+        "year": 2013,
+        "genre": ["comedy"],
+        "length": 153
+    },
+    "Attack on Titan": {
+        "year": 2013,
+        "genre": ["animated", "action-adventure", "drama", "fantasy"],
+        "length": 94
+    }
+}
 
 songs = {}
