@@ -32,3 +32,6 @@ Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException:
 
 2024.01.09 21:19:43 WARN  Build server is not auto-connectable.[0m
 2024.01.09 21:19:43 WARN  no build tool detected in workspace '/Users/benlandrette/ccode/storage/codecademy/recommendation-software'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+2024.01.09 21:37:49 INFO  Shutting down server[0m
+2024.01.09 21:37:49 INFO  shutting down Metals[0m
+2024.01.09 21:37:49 INFO  Exiting server[0m
