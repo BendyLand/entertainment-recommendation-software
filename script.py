@@ -24,10 +24,6 @@ Guiding questions to help narrow down the type of entertainment the user is look
 
 # Use letters for user input a) action, b) action, etc.
 
-games = {}
-movies = {}
-tv_shows = {}
-songs = {}
 
 def greet():
     print(dedent("""\
