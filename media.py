@@ -337,4 +337,111 @@ tv_shows = {
     }
 }
 
-songs = {}
+songs = {
+    "American Pie - Don McLean": {
+        "year": 1971,
+        "genre": ["folk-rock", "indie", "rock"],
+        "length": 271 # seconds
+    },
+    "Layla - Eric Clapton": {
+        "year": 1970,
+        "genre": ["blues", "rock"],
+        "length": 163
+    },
+    "I Will Survive - Gloria Gaynor": {
+        "year": 1978,
+        "genre": ["disco", "rock"],
+        "length": 195
+    },
+    "Hotel California - Eagles": {
+        "year": 1976,
+        "genre": ["rock", "classic-rock"],
+        "length": 390
+    },
+    "Take On Me - A-ha": {
+        "year": 1985,
+        "genre": ["pop"],
+        "length": 164
+    },
+    "All Night Long (All Night) - Lionel Richie": {
+        "year": 1983,
+        "genre": ["r&b", "soul"],
+        "length": 260
+    },
+    "Don't Stop Believin' - Journey": {
+        "year": 1983,
+        "genre": ["rock"],
+        "length": 251
+    },
+    "Sweet Dreams (Are Made of These) - Eurythmics": {
+        "year": 1983,
+        "genre": ["pop", "indie"],
+        "length": 216
+    },
+    "Straight Outta Compton - N.W.A.": {
+        "year": 1988,
+        "genre": ["hip-hop"],
+        "length": 258
+    },
+    "Bitter Sweet Symphony - The Verve": {
+        "year": 1997,
+        "genre": ["indie", "pop", "rock"],
+        "length": 273
+    },
+    "Wonderwall - Oasis": {
+        "year": 1995,
+        "genre": ["rock", "indie"],
+        "length": 168
+    },
+    "Juicy - The Notorious B.I.G.": {
+        "year": 1994,
+        "genre": ["hip-hop", "pop"],
+        "length": 253
+    },
+    "I Want it That Way - Backstreet Boys": {
+        "year": 1999,
+        "genre": ["pop"],
+        "length": 213
+    },
+    "Seven Nation Army - The White Stripes": {
+        "year": 2003,
+        "genre": ["indie", "classic-rock", "rock"],
+        "length": 232
+    },
+    "Toxic - Britney Spears": {
+        "year": 2003,
+        "genre": ["pop"],
+        "length": 199
+    },
+    "Lose Yourself - Eminem": {
+        "year": 2002,
+        "genre": ["hip-hop"],
+        "length": 267
+    },
+    "Viva La Vida - Coldplay": {
+        "year": 2008,
+        "genre": ["indie", "pop"],
+        "length": 225
+    },
+    "Get Lucky - Daft Punk": {
+        "year": 2013,
+        "genre": ["disco", "funk"],
+        "length": 247
+    },
+    "We Are Young - fun.": {
+        "year": 2012,
+        "genre": ["indie", "rock", "pop"],
+        "length": 233
+    },
+    "Dynamite - Taio Cruz": {
+        "year": 2010,
+        "genre": ["r&b", "pop"],
+        "length": 202
+    },
+    "Nights - Frank Ocean": {
+        "year": 2016,
+        "genre": ["r&b", "soul"],
+        "length": 308
+    }
+}
+print(len(songs))
