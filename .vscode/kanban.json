@@ -11,10 +11,6 @@
             "title": "To-Do",
             "tasks": [
                 {
-                    "text": "# Gather Data\n## We need to create some data that we can place into a data structure.\n\n### There are two options available to you:\n\n - Download and use a premade dataset here that contains data for fictional restaurants.\n - Create your own sets of data.",
-                    "id": "clr2uf2ah000e4666hchm4kad"
-                },
-                {
                     "text": "# Write Your Program\n## This project consists of two main parts:\n\n1) Implementing an autocomplete that, based on a user’s input, returns a list of possible categories based on the beginning of a word. You should use the data created in the last step to create the autocomplete. It is up to you how to properly store and retrieve the data.\n2) Retrieving and displaying all of the data related to the category selected by the user. It is up to you how to properly store and retrieve the data.",
                     "id": "clr2ug2q2000f4666qcq2te1f"
                 },
@@ -45,16 +41,20 @@
             "title": "Done",
             "tasks": [
                 {
-                    "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
-                    "id": "clr2ubbp3000a46669e7nr28q"
+                    "text": "# Gather Data\n## We need to create some data that we can place into a data structure.\n\n### There are two options available to you:\n\n - Download and use a premade dataset here that contains data for fictional restaurants.\n - Create your own sets of data.",
+                    "id": "clr2uf2ah000e4666hchm4kad"
+                },
+                {
+                    "text": "# Version Control\n - Set up Git tracking in your directory and make sure to add and commit changes as you make them.",
+                    "id": "clr2ueih2000d4666bc7llpnd"
                 },
                 {
                     "text": "# Setting up your GitHub Repository\n## Create a new GitHub repository for this project and add at least one Python file inside.\n\n - Don’t forget to name your file!",
                     "id": "clr2udtdu000c4666lyx2kd4v"
                 },
                 {
-                    "text": "# Version Control\n - Set up Git tracking in your directory and make sure to add and commit changes as you make them.",
-                    "id": "clr2ueih2000d4666bc7llpnd"
+                    "text": "# Think of an Idea\n## Take some time to think of an idea for your project. 💡\n\n### Some questions you can ask yourself is:\n\n - What kind of recommendation system do you want to build?\n - Who do you want to build something for? Yourself? Your friends? Your family? Your co-workers?\n - What topics will be searchable in your recommendation system?",
+                    "id": "clr2ubbp3000a46669e7nr28q"
                 }
             ],
             "id": "clr2ssoln000e4666moihcrew",
@@ -63,5 +63,5 @@
     ],
     "autosave": true,
     "saveToFile": true,
-    "timestamp": 1704761625922
+    "timestamp": 1704942861068
 }
