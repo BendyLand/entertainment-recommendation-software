@@ -24,11 +24,11 @@ def greet():
     """))
 
 
-def choose_random_media_type() -> str :
+def choose_random_media_type() -> str:
     return sample(["movies", "tv_shows", "games", "songs"], 1)[0]
 
 
-def choose_random_metric():
+def choose_random_metric() -> str:
     return sample(["year", "genre", "length"], 1)[0]
 
 
