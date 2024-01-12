@@ -1,3 +1,4 @@
+# games, movies, tv_shows, songs
 # oldest: 1990 ; newest: 2022
 games = {
     "Pokemon Red/Blue/Yellow": {
