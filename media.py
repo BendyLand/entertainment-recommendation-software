@@ -1,3 +1,4 @@
+# oldest: 1990 ; newest: 2022
 games = {
     "Pokemon Red/Blue/Yellow": {
         "year": 1996,
@@ -106,6 +107,7 @@ games = {
     }
 }
 
+# oldest: 1980 ; newest: 2018
 movies = {
     "Raiders of the Lost Ark": {
         "year": 1981,
@@ -224,6 +226,7 @@ movies = {
     }
 }
 
+# oldest: 1987 ; newest 2013
 tv_shows = {
     "Saved by the Bell": {
         "year": 1989,
@@ -310,7 +313,7 @@ tv_shows = {
         "genre": ["sitcom"],
         "length": 208
     },
-    "The Big Band Theory": {
+    "The Big Bang Theory": {
         "year": 2007,
         "genre": ["sitcom"],
         "length": 279
@@ -337,6 +340,7 @@ tv_shows = {
     }
 }
 
+# oldest: 1970 ; newest: 2016
 songs = {
     "American Pie - Don McLean": {
         "year": 1971,
