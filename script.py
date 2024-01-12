@@ -53,9 +53,7 @@ def choose_media_type():
     return media_type
 
 
-def narrow_down_choices():
-    print("Not sure what to choose? No problem!")
-    print("Let's use another metric to narrow down your choices.")
+def choose_metric():
     choice = input("What's most important to you,\na) Release date\nb) Genre\nc) Length\nd) Surprise me!\n").lower()
     metric = ""
     if choice == "a":
@@ -72,12 +70,42 @@ def narrow_down_choices():
     return metric
 
 
-def start():
+def sort_media_by_year():
+    return "Sorting media by year..."
+
+
+def sort_media_by_genre():
+    return "Sorting media by genre..."
+
+
+def sort_media_by_length():
+    return "Sorting media by length..."
+
+# Currently returns None and gets passed to run(). 
+# Will follow new functions instead
+def choose_sort(metric):
+    if metric == "year":
+        sort_media_by_year()
+    elif metric == "genre":
+        sort_media_by_genre()
+    elif metric == "length":
+        sort_media_by_length()
+
+
+def narrow_down_choices():
+    print("Not sure what to choose? No problem!")
+    print("Let's use another metric to narrow down your choices.")
+    metric = choose_metric()
+    return choose_sort(metric)
+
+
+def run():
     greet()
     print("Let's start by figuring out what kind of entertainment you're in the mood for.")
     print("What kind of media should we look at?")
     media_type = choose_media_type()
-    print(media_type)
+    print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
 
 
-start()
+if __name__ == "__main__":
+    run()
