@@ -76,7 +76,7 @@ def choose_media_by_year():
     sorted_tv_shows = [*dict(sorted(media.tv_shows.items(), key=lambda item: item[1]["year"])).keys()]
     sorted_songs    = [*dict(sorted(media.songs.items(), key=lambda item: item[1]["year"])).keys()]
 
-    print("All right, we'll choose something based on when it's from.")
+    print("All right, we'll choose something based on when was released.")
     print("Are you looking for something:")
     choice = input("a) Older\nb) Newer\n").lower()
 
@@ -86,44 +86,77 @@ def choose_media_by_year():
         older_movies    = sorted_movies[:3]
         older_tv_shows  = sorted_tv_shows[:3]
         older_songs     = sorted_songs[:3]
-        older_media = {
+        older_media     = {
             "Games":    older_games,
             "Movies":   older_movies,
             "TV Shows": older_tv_shows,
             "Songs":    older_songs
         }
+        return older_media
     else:
         print("Finding something newer...")
-        newer_games     = [*sorted_games.keys()][-3:]
-        newer_movies    = [*sorted_movies.keys()][-3:]
-        newer_tv_shows  = [*sorted_tv_shows.keys()][-3:]
-        newer_songs     = [*sorted_songs.keys()][-3:]
-        newer_media = {
+        newer_games     = sorted_games[-3:]
+        newer_movies    = sorted_movies[-3:]
+        newer_tv_shows  = sorted_tv_shows[-3:]
+        newer_songs     = sorted_songs[-3:]
+        newer_media     = {
             "Games":    newer_games,
             "Movies":   newer_movies,
             "TV Shows": newer_tv_shows,
             "Songs":    newer_songs
         }
         return newer_media
-    
 
 
-def sort_media_by_genre():
-    return "Sorting media by genre..."
+def choose_media_by_length():
+    sorted_games    = [*dict(sorted(media.games.items(), key=lambda item: item[1]["length"])).keys()]
+    sorted_movies   = [*dict(sorted(media.movies.items(), key=lambda item: item[1]["length"])).keys()]
+    sorted_tv_shows = [*dict(sorted(media.tv_shows.items(), key=lambda item: item[1]["length"])).keys()]
+    sorted_songs    = [*dict(sorted(media.songs.items(), key=lambda item: item[1]["length"])).keys()]
+
+    print("All right, we'll choose something based on its length.")
+    print("Are you looking for something:")
+    choice = input("a) Shorter\nb) Longer\n").lower()
+
+    if choice == "a":
+        print("Finding something shorter...")
+        shorter_games     = sorted_games[:3]
+        shorter_movies    = sorted_movies[:3]
+        shorter_tv_shows  = sorted_tv_shows[:3]
+        shorter_songs     = sorted_songs[:3]
+        shorter_media     = {
+            "Games":    shorter_games,
+            "Movies":   shorter_movies,
+            "TV Shows": shorter_tv_shows,
+            "Songs":    shorter_songs
+        }
+        return shorter_media
+    else:
+        print("Finding something longer...")
+        longer_games     = sorted_games[-3:]
+        longer_movies    = sorted_movies[-3:]
+        longer_tv_shows  = sorted_tv_shows[-3:]
+        longer_songs     = sorted_songs[-3:]
+        longer_media     = {
+            "Games":    longer_games,
+            "Movies":   longer_movies,
+            "TV Shows": longer_tv_shows,
+            "Songs":    longer_songs
+        }
+        return longer_media
 
 
-def sort_media_by_length():
-    return "Sorting media by length..."
+def choose_media_by_genre():
+    pass
 
-# Currently returns None and gets passed to run(). 
-# Will follow new functions instead
+
 def choose_sort(metric):
     if metric == "year":
-        media_choices = choose_media_by_year()
+        return choose_media_by_year()
     elif metric == "genre":
-        sort_media_by_genre()
+        choose_media_by_genre()
     elif metric == "length":
-        sort_media_by_length()
+        return choose_media_by_length()
 
 
 def narrow_down_choices():
@@ -135,10 +168,17 @@ def narrow_down_choices():
 
 def run():
     greet()
+
     print("Let's start by figuring out what kind of entertainment you're in the mood for.")
     print("What kind of media should we look at?")
+
     media_type = choose_media_type()
-    print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
+
+    if type(media_type) == str:
+        print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
+    else:
+        print("All right, based on your input, we've found a few options:")
+        print(media_type)
 
 
 if __name__ == "__main__":
