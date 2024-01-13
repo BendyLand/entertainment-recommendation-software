@@ -147,7 +147,28 @@ def choose_media_by_length():
 
 
 def choose_media_by_genre():
-    pass
+    genres = media.group_genres()
+    print(dedent(
+        """
+        All right, we'll choose something based on its genre.
+        We have a huge selection of genres across multiple forms of media,
+        so don't worry about choosing anything too specific.
+        Just choose whatever sounds most appealing to you right now!
+        """
+    ))
+    print("Let's start by choosing three genres to narrow down your options.")
+    print("Use the numbers to choose a genre (you will do this three times):")
+    
+    # Use a while loop to narrow it down iteratively.
+    # Define helper method in media file to find other genres 
+        # alongside the selected one.
+    for i in range(len(genres)):
+        print(f"{i+1}) {genres[i].capitalize()}")
+    choice = int(input())
+
+
+
+
 
 
 def choose_sort(metric):
@@ -166,16 +187,18 @@ def narrow_down_choices():
     return choose_sort(metric)
 
 
+def narrow_down_single_media_type():
+    pass
+
+
 def run():
     greet()
-
     print("Let's start by figuring out what kind of entertainment you're in the mood for.")
     print("What kind of media should we look at?")
-
     media_type = choose_media_type()
-
     if type(media_type) == str:
         print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
+        narrow_down_single_media_type()
     else:
         print("All right, based on your input, we've found a few options:")
         print(media_type)

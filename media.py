@@ -449,3 +449,24 @@ songs = {
         "length": 308
     }
 }
+def group_genres():
+    genres = []
+    for values in games.values():
+        for val in values["genre"]:
+            if val not in genres:
+                genres.append(val)
+    for values in movies.values():
+        for val in values["genre"]:
+            if val not in genres:
+                genres.append(val)
+    for values in tv_shows.values():
+        for val in values["genre"]:
+            if val not in genres:
+                genres.append(val)
+    for values in songs.values():
+        for val in values["genre"]:
+            if val not in genres:
+                genres.append(val)
+
+    return sorted(genres)
+
