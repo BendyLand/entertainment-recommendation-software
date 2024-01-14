@@ -449,24 +449,20 @@ songs = {
         "length": 308
     }
 }
+
+media_types = [games, movies, tv_shows, songs]
+
+def extract_genres(media_type, title):
+    return media_type[title]["genre"]
+
 def group_genres():
     genres = []
-    for values in games.values():
-        for val in values["genre"]:
-            if val not in genres:
-                genres.append(val)
-    for values in movies.values():
-        for val in values["genre"]:
-            if val not in genres:
-                genres.append(val)
-    for values in tv_shows.values():
-        for val in values["genre"]:
-            if val not in genres:
-                genres.append(val)
-    for values in songs.values():
-        for val in values["genre"]:
-            if val not in genres:
-                genres.append(val)
+    for media_type in media_types:
+        media_genres = map(lambda title: extract_genres(media_type, title), media_type)
+        genres += media_genres
+    genres = sorted(set([x for sublist in genres for x in sublist]))
+    return genres
 
-    return sorted(genres)
+
+
 

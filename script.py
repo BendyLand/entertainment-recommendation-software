@@ -156,15 +156,14 @@ def choose_media_by_genre():
         Just choose whatever sounds most appealing to you right now!
         """
     ))
-    print("Let's start by choosing three genres to narrow down your options.")
-    print("Use the numbers to choose a genre (you will do this three times):")
+    print("Let's start by choosing some genres to narrow down your options.")
     
     # Use a while loop to narrow it down iteratively.
     # Define helper method in media file to find other genres 
         # alongside the selected one.
     for i in range(len(genres)):
         print(f"{i+1}) {genres[i].capitalize()}")
-    choice = int(input())
+    choice = int(input("Enter the number of a genre you're interested in: "))
 
 
 
