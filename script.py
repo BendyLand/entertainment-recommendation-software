@@ -1,14 +1,9 @@
 from textwrap import dedent
-import media
 from random import sample
+import media
+import utils
 
 """
-Project Brainstorming:
-? What does your program do?
-My program will take in general information to help you narrow down a form of entertainment to consume.
-? What questions will you ask the user?
-Guiding questions to help narrow down the type of entertainment the user is looking for
-
 ? How do the above questions combine to return a recommendation?
 ! Make sure it satisfies all the project requirements
 """
@@ -71,10 +66,10 @@ def choose_metric() -> str:
 
 
 def choose_media_by_year():
-    sorted_games    = [*dict(sorted(media.games.items(), key=lambda item: item[1]["year"])).keys()]
-    sorted_movies   = [*dict(sorted(media.movies.items(), key=lambda item: item[1]["year"])).keys()]
+    sorted_games    = [*dict(sorted(media.games.items()   , key=lambda item: item[1]["year"])).keys()]
+    sorted_movies   = [*dict(sorted(media.movies.items()  , key=lambda item: item[1]["year"])).keys()]
     sorted_tv_shows = [*dict(sorted(media.tv_shows.items(), key=lambda item: item[1]["year"])).keys()]
-    sorted_songs    = [*dict(sorted(media.songs.items(), key=lambda item: item[1]["year"])).keys()]
+    sorted_songs    = [*dict(sorted(media.songs.items()   , key=lambda item: item[1]["year"])).keys()]
 
     print("All right, we'll choose something based on when was released.")
     print("Are you looking for something:")
@@ -147,7 +142,7 @@ def choose_media_by_length():
 
 
 def choose_media_by_genre():
-    genres = media.group_genres()
+    genres = utils.group_genres()
     print(dedent(
         """
         All right, we'll choose something based on its genre.
@@ -158,23 +153,20 @@ def choose_media_by_genre():
     ))
     print("Let's start by choosing some genres to narrow down your options.")
     
-    # Use a while loop to narrow it down iteratively.
-    # Define helper method in media file to find other genres 
-        # alongside the selected one.
     for i in range(len(genres)):
         print(f"{i+1}) {genres[i].capitalize()}")
-    choice = int(input("Enter the number of a genre you're interested in: "))
 
-
-
-
+    choice = genres[int(input("Enter the number of a genre you're interested in: ")) - 1]
+    related_genres = utils.find_related_genres(choice)
+    # Right now it just returns the related genres, not the related titles
+    return related_genres
 
 
 def choose_sort(metric):
     if metric == "year":
         return choose_media_by_year()
     elif metric == "genre":
-        choose_media_by_genre()
+        return choose_media_by_genre()
     elif metric == "length":
         return choose_media_by_length()
 
@@ -197,7 +189,7 @@ def run():
     media_type = choose_media_type()
     if type(media_type) == str:
         print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
-        narrow_down_single_media_type()
+        #? to-do: narrow_down_single_media_type()
     else:
         print("All right, based on your input, we've found a few options:")
         print(media_type)
