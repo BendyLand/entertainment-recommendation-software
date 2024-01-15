@@ -49,7 +49,7 @@ def choose_media_type() -> str:
 
 
 def choose_metric() -> str:
-    choice = input("What's most important to you,\na) Release date\nb) Genre\nc) Length\nd) Surprise me!\n").lower()
+    choice = input("What's most important to you?\na) Release date\nb) Genre\nc) Length\nd) Surprise me!\n").lower()
     metric = ""
     if choice == "a":
         metric = "year"
@@ -152,14 +152,12 @@ def choose_media_by_genre():
         """
     ))
     print("Let's start by choosing some genres to narrow down your options.")
-    
+
     for i in range(len(genres)):
         print(f"{i+1}) {genres[i].capitalize()}")
 
     choice = genres[int(input("Enter the number of a genre you're interested in: ")) - 1]
     related_genres = utils.find_related_genres(choice)
-    # Right now it just returns the related genres, not the related titles
-    return related_genres
 
 
 def choose_sort(metric):
@@ -178,8 +176,19 @@ def narrow_down_choices():
     return choose_sort(metric)
 
 
-def narrow_down_single_media_type():
-    pass
+def narrow_down_single_media_type(media_type):
+    print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
+    print("We'll narrow down your options by using some metrics.")
+    metric = choose_metric()
+    if metric == "year":
+        media = choose_media_by_year()
+        return utils.filter_dictionary(media, media_type)
+    elif metric == "genre":
+        media = choose_media_by_genre()
+        return utils.filter_dictionary(media, media_type)
+    elif metric == "length":
+        media = choose_media_by_length()
+        return utils.filter_dictionary(media, media_type)
 
 
 def run():
@@ -188,8 +197,7 @@ def run():
     print("What kind of media should we look at?")
     media_type = choose_media_type()
     if type(media_type) == str:
-        print(f"All right! Let's take a look at some {media_type if media_type != 'tv_shows' else 'tv shows'}!")
-        #? to-do: narrow_down_single_media_type()
+        print(narrow_down_single_media_type(media_type))
     else:
         print("All right, based on your input, we've found a few options:")
         print(media_type)

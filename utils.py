@@ -5,6 +5,13 @@ def extract_genres(media_type, title):
     return media_type[title]["genre"]
 
 
+def filter_dictionary(dictionary, media_type):
+    for single_media_type in dictionary.items():
+        if single_media_type[0].lower().replace(' ', '_') == media_type:
+            return single_media_type
+    return "Error finding media. Please try again."
+
+
 def group_genres():
     genres = []
     for media_type in media_types:
@@ -22,5 +29,5 @@ def find_related_genres(selected_genre):
             if selected_genre in list_of_genres:
                 related_genres += list_of_genres
                 break
-    return related_genres
+    return sorted([*set(related_genres)])
 
