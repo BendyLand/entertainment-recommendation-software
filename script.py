@@ -3,18 +3,13 @@ from random import sample
 import media
 import utils
 
-"""
-? How do the above questions combine to return a recommendation?
-! Make sure it satisfies all the project requirements
-"""
-
 
 def greet():
     print(dedent("""\
         Welcome to the Entertainment Recommendation System!
 
         We have a vast collection of media to share,
-        but in order to give you a recommendation,
+        so in order to give you a recommendation,
         we need to narrow down your choices.
     """))
 
@@ -110,6 +105,7 @@ def choose_media_by_length():
     sorted_songs    = [*dict(sorted(media.songs.items(), key=lambda item: item[1]["length"])).keys()]
 
     print("All right, we'll choose something based on its length.")
+    print("Games are measured in hours, movies in minutes, tv shows in number of episodes, and songs in seconds.")
     print("Are you looking for something:")
     choice = input("a) Shorter\nb) Longer\n").lower()
 
@@ -149,15 +145,35 @@ def choose_media_by_genre():
         We have a huge selection of genres across multiple forms of media,
         so don't worry about choosing anything too specific.
         Just choose whatever sounds most appealing to you right now!
-        """
-    ))
-    print("Let's start by choosing some genres to narrow down your options.")
+
+        We'll use your choice to locate media based on related genres.
+        """))
 
     for i in range(len(genres)):
         print(f"{i+1}) {genres[i].capitalize()}")
 
     choice = genres[int(input("Enter the number of a genre you're interested in: ")) - 1]
     related_genres = utils.find_related_genres(choice)
+    related_media = {"Games": [], "Movies": [], "TV Shows": [], "Songs": []}
+
+    for related_genre in related_genres:
+        for item in media.games.items():
+            if related_genre in item[1]["genre"]:
+                related_media["Games"].append(item[0])
+        for item in media.movies.items():
+            if related_genre in item[1]["genre"]:
+                related_media["Movies"].append(item[0])
+        for item in media.tv_shows.items():
+            if related_genre in item[1]["genre"]:
+                related_media["TV Shows"].append(item[0])
+        for item in media.songs.items():
+            if related_genre in item[1]["genre"]:
+                related_media["Songs"].append(item[0])
+
+    for item in related_media.items():
+        related_media[item[0]] = sorted([*set(item[1])])[:3]
+    
+    return related_media
 
 
 def choose_sort(metric):
@@ -193,13 +209,16 @@ def narrow_down_single_media_type(media_type):
 
 def run():
     greet()
+
     print("Let's start by figuring out what kind of entertainment you're in the mood for.")
     print("What kind of media should we look at?")
+
     media_type = choose_media_type()
+
     if type(media_type) == str:
         print(narrow_down_single_media_type(media_type))
     else:
-        print("All right, based on your input, we've found a few options:")
+        print("All right, based on your input, we've found some options:")
         print(media_type)
 
 

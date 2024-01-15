@@ -232,7 +232,7 @@ tv_shows = {
     },
     "Cops": {
         "year": 1989,
-        "genre": ["action", "crime"],
+        "genre": ["action-adventure", "crime"],
         "length": 1100
     },
     "Full House": {
