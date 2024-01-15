@@ -24,5 +24,3 @@ def find_related_genres(selected_genre):
                 break
     return related_genres
 
-
-
