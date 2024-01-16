@@ -26,7 +26,7 @@ def find_related_genres(selected_genre):
     for media_type in media_types:
         grouped_genres = sorted(list(map(lambda title: extract_genres(media_type, title), media_type)))
         for list_of_genres in grouped_genres:
-            if selected_genre in list_of_genres:
+            if selected_genre in list_of_genres and selected_genre in list_of_genres:
                 related_genres += list_of_genres
                 break
     return sorted([*set(related_genres)])

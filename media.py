@@ -76,7 +76,7 @@ games = {
     },
     "Portal 2": {
         "year": 2011,
-        "genre": ["puzzle", "fps"],
+        "genre": ["puzzle"],
         "length": 8.5
     },
     "Marvel's Spider-Man": {
@@ -329,11 +329,6 @@ tv_shows = {
         "year": 2013,
         "genre": ["comedy"],
         "length": 153
-    },
-    "Attack on Titan": {
-        "year": 2013,
-        "genre": ["animated", "action-adventure", "drama", "fantasy"],
-        "length": 94
     }
 }
 

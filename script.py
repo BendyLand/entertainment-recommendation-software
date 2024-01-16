@@ -39,7 +39,7 @@ def choose_media_type() -> str:
         media_type = choose_random_media_type()
     else:
         print("Invalid choice. Please try again.")
-        choose_media_type()
+        return choose_media_type()
     return media_type
 
 
@@ -105,7 +105,6 @@ def choose_media_by_length():
     sorted_songs    = [*dict(sorted(media.songs.items(), key=lambda item: item[1]["length"])).keys()]
 
     print("All right, we'll choose something based on its length.")
-    print("Games are measured in hours, movies in minutes, tv shows in number of episodes, and songs in seconds.")
     print("Are you looking for something:")
     choice = input("a) Shorter\nb) Longer\n").lower()
 
@@ -146,7 +145,7 @@ def choose_media_by_genre():
         so don't worry about choosing anything too specific.
         Just choose whatever sounds most appealing to you right now!
 
-        We'll use your choice to locate media based on related genres.
+        We'll use your choice to locate media with related genres.
         """))
 
     for i in range(len(genres)):
@@ -219,7 +218,8 @@ def run():
         print(narrow_down_single_media_type(media_type))
     else:
         print("All right, based on your input, we've found some options:")
-        print(media_type)
+        for item in media_type.items():
+            print(item)
 
 
 if __name__ == "__main__":
