@@ -9,7 +9,7 @@ def filter_dictionary(dictionary, media_type):
     for single_media_type in dictionary.items():
         if single_media_type[0].lower().replace(' ', '_') == media_type:
             return single_media_type
-    return "Error finding media. Please start your search over."
+    return "Error finding media. Please try again."
 
 
 def group_genres():
