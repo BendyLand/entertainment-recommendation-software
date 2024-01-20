@@ -209,7 +209,7 @@ def narrow_down_single_media_type(media_type):
 def run():
     greet()
 
-    print("Let's start by figuring out what kind of entertainment you're in the mood for.")
+    print("Let's start by figuring out what kind of\nentertainment you're in the mood for.\n")
     print("What kind of media should we look at?")
 
     media_type = choose_media_type()
